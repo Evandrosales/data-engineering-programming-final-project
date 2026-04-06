@@ -1,0 +1,16 @@
+include README.md
+include requirements.txt
+include pyproject.toml
+include MANIFEST.in
+
+recursive-include business *.py
+recursive-include config *.py
+recursive-include data_io *.py
+recursive-include pipeline *.py
+recursive-include session *.py
+recursive-include tests *.py
+
+global-exclude __pycache__
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .DS_Store
